@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RAGHU NANDAN</title>
+    <style>
+
+        body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           background-color: black;
+       }
+        .box1{
+        background-color: white;
+        height: 550px;
+        width: 700px;
+        border-radius: 3px;
+        border-color: white;   
+        }
+        .boxes{
+            display: flex;
+            
+        }
+       .left_box{
+        border-right: 1px solid lightgrey;
+        height: 250px;
+        width: 350px;
+        margin-top: 40px;
+       }
+       .quora{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        }
+        .txt1{
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        font-size: calc(15px * var(--dynamic-font-scale,1));
+        font-weight: bold;
+        color: #636466;
+        display: flex;
+        justify-content: center;
+        }
+        .left_txt{
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;  
+        color: #939598;
+        padding-top: 5px;
+        padding-left: 25px;
+        font-size: 13px;
+        }
+        .link1{
+            color: rgb(25, 95, 170);
+            text-decoration: none;
+        }    
+        .link1:hover{
+            text-decoration: underline;
+            color: rgb(25, 95, 170);
+        }
+        .input1{
+            display: flex;
+            height: 45px;
+            width: 295px;
+            margin-top: 26px;
+            margin-left: 25px;
+            border: 1px solid  lightgrey;
+            border-radius: 3px;
+            
+        }
+        .conti_google{
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-weight: 10px;
+            padding-left: 13px;
+            font-size: 15px;
+            color: black;
+            padding-top: 12px;
+        }
+        .gg1{
+            text-decoration: none;
+        }
+        .input1:hover{
+            cursor: pointer;
+            background-color: #efefef;
+        }
+        .google_img{
+           padding-top: 12px;
+           padding-left: 12px;
+           padding-bottom: 12px;
+        }
+        .input2{
+            display: flex;
+            height: 45px;
+            width: 295px;
+            margin-top: 7px;
+            margin-left: 25px;
+            border: 1px solid  lightgrey;
+            border-radius: 3px;
+        }
+        .fb_img{
+            padding-top: 10px;
+           padding-left: 10px;
+           padding-bottom: 10px;
+        }
+        .conti_fb{
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-weight: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+            color: black;
+            padding-top: 12px;
+        }
+        .fb1{
+            text-decoration: none;
+        }
+        .input2:hover{
+            cursor: pointer;
+            background-color: #efefef;
+        }
+        .email1{
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            color: #686868;
+            font-size: 13px;
+            font-weight: 500;
+            width: 295px;
+            height: 25px;
+            margin-top: 7px;
+            margin-left: 26px;
+            text-align: center;
+            border-radius: 20px;
+            padding-top: 7px;
+         }
+        .email1:hover{
+            cursor: pointer;
+            background-color: #efefef ;
+        }
+        .right_box{
+            margin-top: 40px;
+            height: 250px;
+            width: 350px;
+        }
+        .login{
+            border-bottom: 1px solid lightgrey;
+            margin-left: 23px;
+            margin-top: 0px;
+            width: 295px;
+            padding-bottom: 8px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            color: black;
+            font-size: 15px;
+        }
+        .email2{
+            margin-top: 18px;
+            margin-left: 23px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            color: black;
+            font-size: 13px;
+        }
+        .your_email{
+            height: 42px;
+            width: 295px;
+            margin-top: 5px;
+            border: 1px solid  lightgrey;
+            border-radius: 3px;
+        }
+        .your_email::placeholder{
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            padding-left: 5px;
+            font-size: 15px;
+        }
+        .your_email:hover{
+            border: 1px solid blue;
+        }
+        .password{
+            margin-top: 18px;
+            margin-left: 23px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-weight: 700;
+            color: black;
+            font-size: 13px;
+        }
+        .ps{
+            height: 42px;
+            width: 295px;
+            margin-top: 5px;
+            border: 1px solid  lightgrey;
+            border-radius: 3px;
+        }
+        .ps::placeholder{
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            padding-left: 5px;
+            font-size: 15px;
+        }
+        .ps:hover{
+            border: 1px solid blue;
+        }
+        .forgot_ps{
+            margin-top: 24px;
+            margin-left: 23px;
+            text-decoration: none;
+            width: 150px;
+        }
+        .forgot_ps:hover{
+            text-decoration: underline rgb(145, 145, 145) ;
+        }
+        .fg_login{
+            display: flex;
+        }
+        .login1{
+            margin-left: 100px;
+            margin-top: 13px;
+            justify-content: right;
+            margin-right: 25px;
+        }
+        .button_login{
+            border-radius: 30px;
+            border: none;
+            height: 40px;
+            width: 75px;
+            color: white;
+            font-weight: 600;
+            background-color: rgb(157, 174, 249);
+        }
+        .language{
+            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+            margin-top: 26px;
+            height: 52px;
+            
+        }
+        .hindi_tamil{
+            display: flex;
+            text-decoration: none;
+            color: rgb(25, 95, 170);
+            font-size: 13.5px;
+            padding-left: 290px;
+            padding-top: 16px;
+        }
+        .hindi{
+            margin-left: 17px;
+        }
+        .tamil:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .hindi:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .last{
+            display: flex;
+            background-color: rgb(235, 235, 235);
+            height: 51px;
+        }
+        .last a{
+            text-decoration: none;
+            padding-top: 10px;
+            color: #5f5d5d;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+        .lastt{
+            display: flex;
+            margin-top: 16px;
+            font-size: 13px;
+            margin-left: 65px;
+        }
+        .l9{
+            color: #5f5d5d;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+        .last a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+       <div class="quora"><img src="img3.png" width="205px"></div> 
+           <div class="txt1">A place to share knowledge and better understand the world</div>
+            <div class="boxes">
+                <div class="left_box"> 
+                     <div class="left_txt">By continuing you indicate that you agree to 
+                  <br>Quora’s <a class="link1" href="#">Terms of Service </a> and <a class="link1" href="#">Privacy Policy</a>.</div>
+                  <div class="google_input">   
+                    <div class="input1"><img src="img2.jpg" width="18.5px" alt=""  class="google_img" ><a href="http://127.0.0.1:5500/task2/google_form.html" class="gg1"><div class="conti_google">Continue with Google</div></a></div></div>
+                    <div class="fb_input">   
+                        <div class="input2"><img src="img1.jpg" width="25px" alt=""  class="fb_img" ><a href="#" class="fb1"> <div class="conti_fb">Continue with Facebook</div></a></div></div>
+                        <div class="email1">Sign up with email</div>
+                 </div>   
+                 <div class="right_box">
+                   <div class="login">Login</div>
+                     <div class="email2">Email
+                        <div><input type="text" class="your_email" placeholder="Your email"></div>
+                     </div>
+                     <div class="password">Password
+                        <div><input type="text" class="ps" placeholder="Your password"></div>
+                     </div>
+                        <div class="fg_login"> <div class="forgot_ps"><a href="#" style="color: rgb(145, 145, 145); font-size: 13px; font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif; text-decoration: none;">Forgot password?</a>
+                        </div>
+                          <div class="login1"><button class="button_login">Login</button></div>
+                        </div>
+                   </div>
+                        
+            </div>      
+            <div class="language"><a href="#" class="hindi_tamil"><div class="tamil"> &#2980;&#2990;&#3007;&#2996;&#3021; &#129170; </div><div class="hindi">  &#2361;&#2367;&#2344;&#2381;&#2342;&#2368;   &#129170;</div></a></div> 
+            <div class="last">
+                <div class="lastt"><div class="l1"><a href="#">About </a></div>
+                <div class="l2">&nbsp;&middot; <a href="#">Careers</a></div>
+                <div class="l3">&nbsp;&middot; <a href="#">Privacy</a></div>
+                <div class="l4">&nbsp;&middot; <a href="#">Terms</a></div>
+                <div class="l5">&nbsp;&middot; <a href="#">Contact</a></div>
+                <div class="l6">&nbsp;&middot; <a href="#">Languages</a></div>
+                <div class="l7">&nbsp;&middot; <a href="#">Your Ad Choices</a></div>
+                <div class="l8">&nbsp;&middot; <a href="#">Press</a></div>
+                <div class="l9">&nbsp;&middot; &#169; Quora, Inc.2024</div></div>
+            </div>
+    </div>
+</body>
+</html>
